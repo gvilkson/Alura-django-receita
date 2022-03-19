@@ -37,7 +37,8 @@
 
                 <!-- Single Best Receipe Area -->
 
-                {% for chave, nome_da_receita in nome_das_receitas.items %}
+                {% if receitas %}
+                {% for receita in receitas %}
 
                 <div class="col-12 col-sm-16 col-lg-4">
                     
@@ -47,7 +48,7 @@
                         <div class="receipe-content">
                             <a href="receita.html">
 
-                                <h5>{{ nome_da_receita }}</h5>
+                                <h5>{{ receita.nome_receita }}</h5>
 
                             </a>
                         </div>
@@ -56,6 +57,8 @@
                 </div>
 
                 {% endfor %}
+                {% else %}
+                {% endif %}
 
             </div>
         </div>
