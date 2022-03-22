@@ -46,7 +46,7 @@
                         <img src="{% static 'img/bg-img/foto_receita.png' %}"></img>
 
                         <div class="receipe-content">
-                            <a href="receita.html">
+                            <a href="{% url 'receita' receita.id %}">
 
                                 <h5>{{ receita.nome_receita }}</h5>
 
