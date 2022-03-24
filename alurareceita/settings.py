@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     # Theird Apps ------------
     'receitas',
+    'pessoas',
 ]
 
 MIDDLEWARE = [
